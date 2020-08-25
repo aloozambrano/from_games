@@ -377,9 +377,11 @@ footer {
 }
 
 footer span{
-  padding: 1rem;
+  margin-top: 40px;
+  padding: 10px;
   display: block;
   text-align: center;
+  border-top: solid 1px rgb(255, 255, 255);
 }
 
 /*--- LOGIN PAGE---*/
