@@ -17,7 +17,12 @@ header {
   background: linear-gradient(90deg, rgba(0,0,0,1) 21%, rgba(32,62,74,1) 81%);
   display: flex;
   justify-content: space-between;
+  width: 100%;
   height: 95px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 99;
 }
 
 .logo-principal img {
@@ -163,27 +168,29 @@ header {
 }
 /*--- FIRST BANNER - TEXTO DESCRIPTIVO Y BOTÓN  ---*/
 .first-banner-home{
-  position: relative;
   display: flex;
   align-items: flex-end;
+  width: 100%;
+  height: 700px;
+  /*--background: url("/images/img-index/firstbanner.png") center fixed;
+  background-repeat: no-repeat;
+  background-size: cover;--*/
 }
 
 .first-banner-home img{
-  width: 100%;
-}
-
-.first-banner-home img:hover{
-  cursor: pointer;
+  max-width: 100%;
+  z-index: 0;
+  position: absolute;
 }
 
 .first-banner-description{
-  position: absolute;
   height: 100px;
   width: 100%;
   color: rgb(255, 255, 255);
   background-color: rgba(31,31,31,.85);
   display: flex;
   justify-content: space-between;
+  z-index: 1;
 }
 
 .banner-description, h3, h1, p{
