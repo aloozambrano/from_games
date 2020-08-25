@@ -1,0 +1,398 @@
+@font-face{
+  font-family: "Play";
+  src: url('/fonts/Play/OFL.txt');
+  src: url("/fonts/Play/Play-Bold.ttf");
+  src: url("/fonts/Play/Play-Regular.ttf");
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Play";
+}
+
+header {
+  color: rgb(255, 255, 255);
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 21%, rgba(32,62,74,1) 81%);
+  display: flex;
+  justify-content: space-between;
+  height: 95px;
+}
+
+.logo-principal img {
+  height: 95px;
+  padding-left: 16px;
+}
+/*---  BARRA DE BUSQUEDA Y BARRA DE NAVEGACIÓN ---*/
+.header-central{
+  width: 600px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-central input {
+  display: flex;
+  justify-content: center;
+  margin: 16px;
+  margin-right: 0;
+  padding: 8px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  margin-top: 20px;
+}
+
+.search input {
+  width: 100%;
+  border: 2px solid rgb(255, 255, 255);
+  border-right: none;
+  padding: 0;
+  margin: 0;
+  height: 20px;
+  border-radius: 50px 0 0 50px;
+  outline: none;
+}
+
+.search button {
+  width: 30px;
+  height: 24px;
+  margin: 0;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgb(32, 62, 74);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  border-radius: 0 50px 50px 0;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.search button:hover{
+  background-color: rgb(255, 255, 255);
+  color: rgb(32, 62, 74);
+}
+
+.header-nav{
+  width: 600px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.header-nav nav ul{
+  padding: 0;
+  margin-bottom: 6px;
+}
+
+.header-nav nav ul li{
+  display: inline;
+}
+
+.header-nav nav ul li a{
+  margin: 0 15px 0 15px;
+  padding: 5px 15px 5px 15px;
+  
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.header-nav nav ul li a:hover{
+  cursor: pointer;
+  background-color: rgb(255, 136, 0);
+  color: rgb(0, 0, 0);
+  border-radius: 50px;
+}
+/*--- BOTÓN DE REGISTRO Y REDES SOCIALES ---*/
+.header-right {
+  width: 320px;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.signin {
+  display: flex;
+  width: 185px;
+  margin: 2px;
+}
+
+.signin a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px rgb(255, 255, 255);
+  border-radius: 50px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  width: 180px;
+  height: 30px;
+}
+
+.signin a:hover{
+  background-color: rgb(255, 136, 0);
+  border: solid 1px rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+}
+
+.menu-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-social a{
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  padding-left: 10px;
+}
+
+#facebook:hover{
+  color: rgb(108, 98, 248);
+}
+#instagram:hover{
+  color: rgb(255, 75, 75);
+}
+/*--- FIRST BANNER - TEXTO DESCRIPTIVO Y BOTÓN  ---*/
+.first-banner-home{
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.first-banner-home img{
+  width: 100%;
+}
+
+.first-banner-home img:hover{
+  cursor: pointer;
+}
+
+.first-banner-description{
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  background-color: rgba(31,31,31,.85);
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner-description, h3, h1, p{
+  margin: 0;
+  padding: 2px;
+  padding-left: 10px;
+}
+
+.btn-buynow {
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-buynow button{
+  margin: 0;
+  width: 160px;
+  height: 50px;
+  border-radius: 50px;
+  border: solid 1px rgb(255, 136, 0);
+  background: rgb(255, 136, 0);
+  font-family: "Play";
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btn-buynow button:hover{
+  background: none;
+  border: solid 2px rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+
+.arrow-down{
+  height: 20px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+/*--- PRESALES GAMES = TITULO MÁS 5 CARDS---*/
+.section-title{
+  text-align: center;
+}
+
+.section-title h2{
+  font-size: 30px;
+}
+
+.presales-games{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 460px;
+
+}
+
+.card-presales{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 220px;
+  height: 450px;
+  border-radius: 50px;
+}
+
+.img-presales img{
+  width: 270px;
+  height: 270px;
+  cursor: pointer;
+}
+
+.info-card span, button{
+  margin-top: 8px;
+}
+
+.info-card button{
+  width: 140px;
+  height: 32px;
+  border-radius: 50px;
+  font-family: "Play";
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  background: rgb(255, 7, 7);
+  border: solid 2px rgb(255, 7, 7);
+  outline: none;
+  cursor: pointer;
+}
+
+.info-card button:hover{
+  background: none;
+  border: solid 2px rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+}
+/*-- BANNER CYBERPUNK 2077--*/
+.second-banner-home img{
+  width: 100%;
+  padding: 30px 0 30px 0;
+}
+/*--- BEST SELLERS GAMES ---*/
+.box-bestsellers{
+  padding: 0 40px 0 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.banner-bestsellers img{
+  width: 28rem;
+  height: 24rem;
+  padding-left: 80px;
+}
+
+.bestsellers-games{
+  display: flex;
+  align-items: center;
+  height: 30rem;
+}
+
+.card-bestsellers{
+  text-align: center;
+  width: 17rem;
+  height: 27rem;
+}
+
+.img-bestsellers img{
+  width: 17rem;
+  height: 17rem;
+}
+
+.info-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-card span, button{
+  margin-top: 0.5rem;
+}
+
+.info-card button{
+  width: 9rem;
+  height: 2rem;
+}
+/*--- BANNER ACCESORIOS ---*/
+.consoles-accesories{
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 90px 0 90px;
+}
+/*--- FOOTER ---*/
+footer {
+  color: rgb(255, 255, 255);
+  background-color:  rgb(17, 17, 17);
+  margin-top: 50px;
+  padding-top: 50px;
+}
+
+.footer-section{
+  display: flex;
+  justify-content: space-around;
+  margin-left: 5rem;
+}
+
+.footer-subsection {
+  width: 15rem;
+  height: 15rem;
+}
+
+.footer-info img{
+  padding-left: 2rem;
+}
+
+.footer-info ul{
+  padding-left: 1rem;
+}
+
+footer span{
+  padding: 1rem;
+  display: block;
+  text-align: center;
+}
+
+/*--- LOGIN PAGE---*/
+.login-principal{
+  display: flex;
+  justify-content: space-between;
+  height: 60rem;
+}
+
+.login-container {
+  background-color: #203E4A;
+  width: 70%;
+}
+
+.login-sidebar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+
+fieldset{
+  display: flex;
+  width: 20rem;
+  height: 30rem;
+}
+
+
+
