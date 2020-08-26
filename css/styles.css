@@ -1,14 +1,8 @@
-@font-face{
-  font-family: "Play";
-  src: url('/fonts/Play/OFL.txt');
-  src: url("/fonts/Play/Play-Bold.ttf");
-  src: url("/fonts/Play/Play-Regular.ttf");
-}
-
 html, body {
   margin: 0;
   padding: 0;
-  font-family: "Play";
+  font-family: "Play-Regular";
+  font-weight: 200;
 }
 
 header {
@@ -144,7 +138,7 @@ header {
 
 .signin a:hover{
   background-color: rgb(255, 136, 0);
-  border: solid 1px rgb(0, 0, 0);
+  border: solid 2px rgb(0, 0, 0);
   color: rgb(0, 0, 0);
 }
 
@@ -221,6 +215,7 @@ header {
   font-family: "Play";
   font-size: 20px;
   cursor: pointer;
+  font-family: "Play-Bold";
 }
 
 .btn-buynow button:hover{
@@ -285,6 +280,8 @@ header {
   border: solid 2px rgb(255, 7, 7);
   outline: none;
   cursor: pointer;
+  font-family: "Play-Regular";
+  font-weight: 100;
 }
 
 .info-card button:hover{
@@ -384,30 +381,174 @@ footer span{
   border-top: solid 1px rgb(255, 255, 255);
 }
 
-/*--- LOGIN PAGE---*/
+
+
+/*--- LOGIN PAGE ---*/
 .login-principal{
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  background-image: url("/images/img-login/login-banner.jpg");
+  background-size: 100% 100vh;
+  padding: 10px 0 0 10px;
   display: flex;
-  justify-content: space-between;
-  height: 60rem;
 }
 
 .login-container {
-  background-color: #203E4A;
-  width: 70%;
+  width: 60%;
+}
+
+.login-container img{
+  border: solid 2px rgb(255, 255, 255);
+  width: 350px;
 }
 
 .login-sidebar{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30%;
+  width: 40%;
 }
 
-fieldset{
+.login-form{
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px;
+  border: rgb(255, 255, 255);
+  width: 400px;
+  height: 600px;
+  padding: 30px 0 30px 0;
   display: flex;
-  width: 20rem;
-  height: 30rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
+.login-form h1{
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
 
+.login-form h2{
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
 
+.form-inputs{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 300px;
+  height: 200px;
+}
+
+.form-inputs input[type="text"], 
+.form-inputs input[type="password"]{
+  border: none;
+  border-bottom: solid 1px black;
+  background: transparent;
+  height: 40px;
+  color: black;
+  font-size: 16px;
+}
+
+.accept-terms{
+  display: flex;
+  align-items: center;
+}
+
+.login-form input[type="submit"]{
+  margin: 0;
+  width: 200px;
+  height: 40px;
+  color: rgb(255, 255, 255);
+  border-radius: 50px;
+  border: solid 2px rgb(41, 41, 41);
+  background: rgb(41, 41, 41);
+  font-family: "Play";
+  font-size: 20px;
+  cursor: pointer;
+  font-family: "Play-Bold";
+}
+
+.login-form input[type="submit"]:hover{
+  background: rgb(255, 255, 255);
+  color: rgb(41, 41, 41);
+}
+
+/*--- BOTONES DE REDES LOGIN ---*/
+.loginBtn {
+  box-sizing: border-box;
+  position: relative;
+  /* width: 13em;  - apply for fixed size */
+  margin: 0.2em;
+  padding: 0 15px 0 46px;
+  border: none;
+  text-align: left;
+  line-height: 34px;
+  white-space: nowrap;
+  border-radius: 50px;
+  font-size: 12px;
+  color: #FFF;
+}
+.loginBtn:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 100%;
+}
+.loginBtn:focus {
+  outline: none;
+}
+.loginBtn:active {
+  box-shadow: inset 0 0 0 32px rgba(0,0,0,0.1);
+}
+/* Facebook */
+.loginBtn--facebook {
+  background-color: #4C69BA;
+  background-image: linear-gradient(#4C69BA, #3B55A0);
+  text-shadow: 0 -1px 0 #354C8C;
+  width: 200px;
+}
+.loginBtn--facebook:before {
+  border-right: #364e92 1px solid;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_facebook.png') 6px 6px no-repeat;
+}
+.loginBtn--facebook:hover,
+.loginBtn--facebook:focus {
+  background-color: #5B7BD5;
+  background-image: linear-gradient(#5B7BD5, #4864B1);
+}
+/* Google */
+.loginBtn--google {
+  background: #DD4B39;
+  width: 200px;
+}
+.loginBtn--google:before {
+  border-right: #BB3F30 1px solid;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_google.png') 6px 6px no-repeat;
+}
+.loginBtn--google:hover,
+.loginBtn--google:focus {
+  background: #E74B37;
+}
+/*--- BOTONES REDES SOCIALES ---*/
+.login-sidebar .menu-social a{
+  color: rgb(122, 122, 122);
+}
+
+.footer-login{
+  margin: 0;
+}
+
+.footer-login footer span{
+  padding: 10px;
+  display: block;
+  text-align: center;
+  border-top: solid 1px rgb(255, 255, 255);
+}
