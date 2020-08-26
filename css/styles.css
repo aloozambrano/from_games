@@ -1,6 +1,10 @@
-html, body {
+*{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+ 
+html, body{
   font-family: "Play-Regular";
   font-weight: 200;
 }
@@ -26,8 +30,6 @@ header {
 /*---  BARRA DE BUSQUEDA Y BARRA DE NAVEGACIÓN ---*/
 .header-central{
   width: 600px;
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -46,14 +48,14 @@ header {
   display: flex;
   align-items: center;
   width: 300px;
-  margin-top: 20px;
+  margin: 10px 0 10px 0;
 }
 
 .search input {
   width: 100%;
   border: 2px solid rgb(255, 255, 255);
   border-right: none;
-  padding: 5px;
+  padding: 15px;
   margin: 0;
   height: 20px;
   border-radius: 50px 0 0 50px;
@@ -83,11 +85,11 @@ header {
   height: 50px;
   display: flex;
   justify-content: center;
-}
+  align-items: center;
+  }
 
 .header-nav nav ul{
-  padding: 0;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 .header-nav nav ul li{
@@ -121,7 +123,6 @@ header {
 .signin {
   display: flex;
   width: 185px;
-  margin: 2px;
 }
 
 .signin a{
@@ -133,7 +134,7 @@ header {
   color: rgb(255, 255, 255);
   text-decoration: none;
   width: 180px;
-  height: 30px;
+  height: 35px;
 }
 
 .signin a:hover{
@@ -193,7 +194,6 @@ header {
 }
 
 .banner-description, h3, h1, p{
-  margin: 0;
   padding: 2px;
   padding-left: 10px;
 }
@@ -225,10 +225,11 @@ header {
 }
 
 .arrow-down{
-  height: 20px;
-  padding: 30px;
+  width: 100%;
+  height: 50px;
   display: flex;
   justify-content: center;
+  align-items: center;
   font-size: 40px;
 }
 /*--- PRESALES GAMES = TITULO MÁS 5 CARDS---*/
@@ -340,17 +341,16 @@ header {
   width: 9rem;
   height: 2rem;
 }
-/*--- BANNER ACCESORIOS ---*/
+/*--------- BANNER ACCESORIOS ---*/
 .consoles-accesories{
   display: flex;
   justify-content: space-around;
-  padding: 50px 90px 0 90px;
+  margin: 50px 90px 50PX 90px;
 }
-/*--- FOOTER ---*/
+/*-------------------- FOOTER ---*/
 footer {
   color: rgb(255, 255, 255);
   background-color:  rgb(17, 17, 17);
-  margin-top: 50px;
   padding-top: 50px;
 }
 
@@ -367,6 +367,10 @@ footer {
 
 .footer-info img{
   padding-left: 2rem;
+}
+
+.footer-title h4{
+  padding-bottom: 20px;
 }
 
 .footer-info ul{
@@ -425,14 +429,10 @@ footer span{
 
 .login-form h1{
   text-align: center;
-  padding: 0;
-  margin: 0;
 }
 
 .login-form h2{
   text-align: center;
-  padding: 0;
-  margin: 0;
   font-size: 18px;
 }
 
@@ -456,11 +456,12 @@ footer span{
 
 .accept-terms{
   display: flex;
-  align-items: center;
+    align-items: center;
+    width: 220px;
+    justify-content: space-around;
 }
 
 .login-form input[type="submit"]{
-  margin: 0;
   width: 200px;
   height: 40px;
   color: rgb(255, 255, 255);
@@ -540,10 +541,6 @@ footer span{
 /*--- BOTONES REDES SOCIALES ---*/
 .login-sidebar .menu-social a{
   color: rgb(122, 122, 122);
-}
-
-.footer-login{
-  margin: 0;
 }
 
 .footer-login footer span{
