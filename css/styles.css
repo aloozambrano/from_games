@@ -384,10 +384,9 @@ footer span{
   text-align: center;
   border-top: solid 1px rgb(255, 255, 255);
 }
+/*------------------- NEWS PAGE ------------------*/
 
-
-
-/*--- LOGIN PAGE ---*/
+/*------------------- LOGIN PAGE -----------------*/
 .login-principal{
   box-sizing: border-box;
   width: 100%;
