@@ -193,9 +193,8 @@ header {
   z-index: 1;
 }
 
-.banner-description, h3, h1, p{
-  padding: 2px;
-  padding-left: 10px;
+.banner-description{
+  padding: 10px 0 0 10px; 
 }
 
 .btn-buynow {
@@ -365,8 +364,26 @@ footer {
   height: 15rem;
 }
 
-.footer-info img{
-  padding-left: 2rem;
+.creditcards{
+  padding-left: 12px;
+  width: 140px;
+  height: 160px;
+  font-size: 40px;
+  display: grid;
+  column-gap: 2px;
+  row-gap: 2px;
+  grid-template-areas: 
+  "fab fab"
+  "fab fab"
+  "fab fab"
+  "fab fab";
+}
+
+.cbook{
+  width: 50px;
+  height: 50px;
+  font-size: 80px;
+  padding-left: 25px;
 }
 
 .footer-title h4{
@@ -385,7 +402,68 @@ footer span{
   border-top: solid 1px rgb(255, 255, 255);
 }
 /*------------------- NEWS PAGE ------------------*/
+.news-title{
+  text-rendering: geometricPrecision;
+  text-align: center;
+  padding: 30px;
+  font-size: 30px;
+}
 
+#news-container{
+  justify-content: center;
+  padding: 50px 0 50px 0;
+  display: grid;
+  grid-template-areas: 
+  "news-card-1 news-card-2"
+  "news-card-3 news-card-4"
+  "news-card-5 news-card-6"
+  "news-card-7 news-card-8";
+  column-gap: 50px;
+  row-gap: 50px;
+}
+
+.news-card{
+  border: solid 1px rgb(255, 255, 255);
+  width: 600px;
+  height: 400px;
+  display: grid;
+  grid-template-areas: 
+  "img"
+  "new-card-container";
+}
+
+.news-card img{
+  height: 240px;
+  border-radius: 50px 0;
+}
+
+.news-card-container{
+  height: 160;
+  display: grid;
+  row-gap: 10px;
+  grid-template-areas: 
+  "span"
+  "h3"
+  "p";
+}
+
+.news-card span{
+  height: 15px;
+}
+
+.news-card h3{
+  font-size: 20px;
+  padding-top: 10px;
+  height: 35px;
+}
+
+.news-card p{
+  height: 90px;
+}
+
+.news-card-1 img{
+  border: solid 1px rgb(0, 0, 0);
+}
 /*------------------- LOGIN PAGE -----------------*/
 .login-principal{
   box-sizing: border-box;

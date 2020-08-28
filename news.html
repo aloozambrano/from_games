@@ -55,14 +55,29 @@
   <main>
 
     <!--- VA UN BANNER CON EL TÍTULO, EL TEXTO ES MOMENTÁNEO-->
-    <h1>+NEWS</h1>
-    <h2>The latest news related to the gamer world!</h2>
+    <div class="news-title">
+      <h1>+NEWS</h1>
+      <h2>The latest news related to the gamer world!</h2>
+    </div>
 
-    <!--AQUÍ ESTÁN UBICADOS LOS 4 CARDS DE NEWS-->
+    <!--AQUÍ ESTÁN UBICADOS LOS 8 CARDS DE NEWS-->
     <div id="news-container">
-      <div class="news-card">
-        <img src="#" alt="">
-        <div class="new-card-container">
+      <div class="news-card news-card-1">
+        <img src="images/img-news/ps5.JPG" alt="ps5 news">
+        <div class="news-card-container">
+          <span>11/11/2020</span>
+          <h3>PS5 will include WiFi 6 and Bluetooth 5.1 connections</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rem error magnam iure ad. Explicabo
+            ea
+            corporis hic rerum odit, praesentium vitae ipsam repellat delectus dolorum obcaecati tempore cum
+            repudiandae.
+            <a href="">View more...</a></p>
+        </div>
+      </div>
+
+      <div class="news-card news-card-2">
+        <img src="images/img-news/hl3.jpg" alt="half life 3">
+        <div class="news-card-container">
           <span>11/11/2020</span>
           <h3>GAME NEWS</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rem error magnam iure ad. Explicabo
@@ -73,9 +88,9 @@
         </div>
       </div>
 
-      <div class="news-card">
-        <img src="#" alt="">
-        <div class="new-card-container">
+      <div class="news-card news-card-3">
+        <img src="images/img-news/fallguys.jpg" alt="fall guys">
+        <div class="news-card-container">
           <span>11/11/2020</span>
           <h3>GAME NEWS</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rem error magnam iure ad. Explicabo
@@ -86,9 +101,9 @@
         </div>
       </div>
 
-      <div class="news-card">
-        <img src="#" alt="">
-        <div class="new-card-container">
+      <div class="news-card news-card-4">
+        <img src="images/img-news/xbox.jpg" alt="xbox">
+        <div class="news-card-container">
           <span>11/11/2020</span>
           <h3>GAME NEWS</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rem error magnam iure ad. Explicabo
@@ -99,9 +114,48 @@
         </div>
       </div>
 
-      <div class="news-card">
-        <img src="#" alt="">
-        <div class="new-card-container">
+      <div class="news-card news-card-5">
+        <img src="images/img-news/residentevil.jpg" alt="residentevil">
+        <div class="news-card-container">
+          <span>11/11/2020</span>
+          <h3>GAME NEWS</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rem error magnam iure ad. Explicabo
+            ea
+            corporis hic rerum odit, praesentium vitae ipsam repellat delectus dolorum obcaecati tempore cum
+            repudiandae.
+            <a href="">View more...</a></p>
+        </div>
+      </div>
+
+      <div class="news-card news-card-6">
+        <img src="images/img-news/covid.jpg" alt="covid-19 & gaming">
+        <div class="news-card-container">
+          <span>11/11/2020</span>
+          <h3>GAME NEWS</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rem error magnam iure ad. Explicabo
+            ea
+            corporis hic rerum odit, praesentium vitae ipsam repellat delectus dolorum obcaecati tempore cum
+            repudiandae.
+            <a href="">View more...</a></p>
+        </div>
+      </div>
+
+      <div class="news-card news-card-7">
+        <img src="images/img-news/gamescom.jpeg" alt="gamescom">
+        <div class="news-card-container">
+          <span>11/11/2020</span>
+          <h3>GAME NEWS</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rem error magnam iure ad. Explicabo
+            ea
+            corporis hic rerum odit, praesentium vitae ipsam repellat delectus dolorum obcaecati tempore cum
+            repudiandae.
+            <a href="">View more...</a></p>
+        </div>
+      </div>
+
+      <div class="news-card news-card-8">
+        <img src="images/img-news/nintendo4k.jpg" alt="nintendoswitch4k">
+        <div class="news-card-container">
           <span>11/11/2020</span>
           <h3>GAME NEWS</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rem error magnam iure ad. Explicabo
@@ -112,6 +166,7 @@
         </div>
       </div>
     </div>
+
   </main>
 
   <!-- LAS 2 PRIMERAS SECCIONES DEL FOOTER SON IMAGENES-->
@@ -121,7 +176,14 @@
         <div class="footer-title">
           <h4>Payment Methods</h4>
           <div class="footer-info">
-            <img src="images/img-footer/creditcards.jpg" alt="creditcards">
+            <div class="creditcards">
+              <i class="fab fa-cc-visa"></i>
+              <i class="fab fa-cc-mastercard"></i>
+              <i class="fab fa-cc-diners-club"></i>
+              <i class="fab fa-cc-amex"></i>
+              <i class="fab fa-cc-paypal"></i>
+              <i class="fab fa-cc-stripe"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -130,7 +192,9 @@
         <div class="footer-title">
           <h4>Complaints Book</h4>
           <div class="footer-info">
-            <img src="images/img-footer/libroreclamos.jpg" alt="libroreclamos">
+            <div class="cbook">
+              <i class="fas fa-book"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -154,7 +218,8 @@
           <h4>Contac Us</h4>
           <div class="footer-info">
             <ul>
-              <li>Central telephone:<br>+051 977 600 468</li><br>
+              <li>Central telephone:<br><a href="https://wa.me/51977600468" target="_blank">+051 977 600 468</a></li>
+              <br>
               <li>Email: <br> contact@fromgames.com</li><br>
               <li>Opening Hours <br> M - F 9am at 6pm</li>
             </ul>
