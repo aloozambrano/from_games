@@ -73,6 +73,7 @@ header {
   border-radius: 0 50px 50px 0;
   cursor: pointer;
   font-size: 10px;
+  transition: 0.3s;
 }
 
 .search button:hover{
@@ -99,9 +100,9 @@ header {
 .header-nav nav ul li a{
   margin: 0 15px 0 15px;
   padding: 5px 15px 5px 15px;
-  
   text-decoration: none;
   color: rgb(255, 255, 255);
+  transition: 0.3s;
 }
 
 .header-nav nav ul li a:hover{
@@ -135,6 +136,7 @@ header {
   text-decoration: none;
   width: 180px;
   height: 35px;
+  transition: 0.3s;
 }
 
 .signin a:hover{
@@ -153,6 +155,7 @@ header {
   color: rgb(255, 255, 255);
   font-size: 30px;
   padding-left: 10px;
+  transition: 0.3s;
 }
 
 #facebook:hover{
@@ -215,6 +218,7 @@ header {
   cursor: pointer;
   font-family: "Play-Bold";
   outline: none;
+  transition: 0.3s;
 }
 
 .btn-buynow button:hover{
@@ -261,10 +265,18 @@ header {
   border-radius: 50px;
 }
 
+.img-presales{
+  overflow: hidden;
+}
 .img-presales img{
   width: 270px;
   height: 270px;
   cursor: pointer;
+  transform: scale(1);
+  transition: 0.5s;
+}
+.img-presales img:hover{
+  transform: scale(1.2);
 }
 
 .info-card span, button{
@@ -284,6 +296,7 @@ header {
   cursor: pointer;
   font-family: "Play-Regular";
   font-weight: 100;
+  transition: 0.3s;
 }
 
 .info-card button:hover{
@@ -305,7 +318,7 @@ header {
 }
 
 .banner-bestsellers img{
-  width: 28rem;
+  width: 37rem;
   height: 24rem;
   padding-left: 80px;
 }
@@ -322,10 +335,19 @@ header {
   height: 27rem;
 }
 
+.img-bestsellers{
+  overflow: hidden;
+}
+
 .img-bestsellers img{
   width: 17rem;
   height: 17rem;
   cursor: pointer;
+  transform: scale(1);
+  transition: 0.5s;
+}
+.card-bestsellers img:hover{
+  transform: scale(1.2);
 }
 
 .info-card{
@@ -432,6 +454,7 @@ footer span{
   grid-template-areas: 
   "img"
   "new-card-container";
+
 }
 
 .news-card img{
@@ -552,6 +575,7 @@ footer span{
   cursor: pointer;
   font-family: "Play-Bold";
   outline: none;
+  transition: 0.3s;
 }
 
 .login-form input[type="submit"]:hover{
